@@ -1,0 +1,6 @@
+greenlet==1.1.2
+playwright==1.21.0
+pyee==8.1.0
+python-dotenv==0.20.0
+websockets==10.1
+Flask==2.1.2
