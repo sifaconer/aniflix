@@ -11,4 +11,4 @@ ENV FLASK_APP="/api/main.py"
 
 RUN apt install -y python3-pip && pip install -r /api/requirements.txt
 
-CMD ["flask", "run"]
+CMD ["flask", "run", "--host", "0.0.0.0"]

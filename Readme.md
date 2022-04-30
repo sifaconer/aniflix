@@ -12,7 +12,7 @@ docker image build -t aniflix:v1 .
 
 __Run Container Docker__
 ```bash
-docker run --network host -d -p 5000:5000 --name aniflix aniflix:v1
+docker run -d -p 5000:5000 --name aniflix aniflix:v1
 ```
 
 ## Api
