@@ -3,9 +3,12 @@ from flask import Flask, request, jsonify
 from play import episode_list, episode_server
 import asyncio
 import dotenv
+from flask_cors import CORS
+
 dotenv.load_dotenv()
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route('/')
 def index():
