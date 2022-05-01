@@ -1,3 +1,4 @@
+import time
 from playwright.async_api import async_playwright
 
 async def episode_list(url_anime, total):
@@ -12,6 +13,7 @@ async def episode_list(url_anime, total):
         await page.goto(url_anime, wait_until="load")
 
         # Get list episode
+        time.sleep(2)
         ul = page.locator('#episodeList')
         list_episode = await ul.evaluate("""
         (ul) => {
