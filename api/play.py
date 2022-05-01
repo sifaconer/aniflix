@@ -117,6 +117,3 @@ async def server_frame_url(iframe_content):
     if exist_iframe is False:
         await iframe_content.locator('button:has-text("Aceptar y Continuar")').click()
     return await iframe_content.locator('iframe').get_attribute("src")
-
-
-
